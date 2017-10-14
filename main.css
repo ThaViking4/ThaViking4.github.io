@@ -1,0 +1,103 @@
+body, html{
+margin: 0;
+height:100%;
+background-color:#2b4362;
+color:#f2f3f5;
+font-size:20;
+overflow: auto;
+}
+p{
+	margin:0;
+	padding:0;
+}
+.topbar{
+	font-size:30;
+	white-space: normal;
+	overflow: hidden;
+	width:100%;
+	background-color:#2b4362;
+}
+/*hide responsive icon*/
+.topbar .icon{
+	display:none;
+}
+/* responsive topbar hide all but 1st child*/
+@media screen and (max-width: 598px){
+	.topbar a:not(:first-child){display:none;}
+	.topbar a.icon{
+		float:right;
+		display:block;
+		max-height:33px;
+	}
+}
+/* The "responsive" class is added to the topnav with JavaScript when 
+the user clicks on the icon. This class makes the topnav look good on 
+small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width:598px){
+	.topbar.responsive {position: absolute/*relative/absolute*/;}
+	.topbar.responsive a.icon{
+		display:none;
+	}
+	.topbar.responsive a {
+		float:none;
+		display:block;
+		text-align:left;
+		max-width:40%;
+		white-space: nowrap;
+	}
+}
+
+a:link,a:visited{
+	color:#f2f3f5;
+	text-decoration:none;
+	display: block;
+	float:left;
+	font-weight: 500;
+	width:auto;
+	padding:8px 13px;
+	border:none;
+	
+}
+a:hover, a:active{
+background-color:#f2f3f5;
+color:black;
+font-weight: 200;
+}
+
+.scripttest{
+	height: 1000px;
+}
+.swap  {
+	font-size: 100;
+}
+.swapped{
+	font-size: 20;
+}
+.hide{
+	display: none;
+}
+
+/*image swap ing images.html*/
+.imgBar img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	float: left;
+	cursor: pointer;
+  }
+  .fullImg img {
+	position: relative;
+	display: block;
+	/*max-width: 100%;*/
+	max-height: 400px;
+  }
+
+
+
+
+
+
+
+
+
+
